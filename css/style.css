@@ -66,7 +66,7 @@ img {
     font-size: 1.9rem;
     line-height: 1.2;
     margin: 0 0 2rem;
-   }
+}
 
 .showcase-top{
     position : relative;
@@ -101,15 +101,52 @@ img {
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
     box-shadow: inset 95px 90px 250px #000000, inset -95px -90px 250px #000000;
-   }
+}
 
 /* tabs */
 .tabs {
     background: #141414;
     padding-top: 1rem;
     border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs .container>div {
+    padding: 1.5rem 0;
+}
+
+.tabs .container>div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: 4px solid #e50914;
    }
 
+
+/* Container */
+
+.container {
+    max-width: 70%;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin: auto;
+}
+   
+/* End of container */
+
+
+   
 .btn {
     display: inline-block;
     background: #e50914;
@@ -123,25 +160,25 @@ img {
     outline: none;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
     border-radius: 2px;
-   }
+}
    
-   .btn:hover {
-    opacity: 0.9;
-   }
-   
-   .btn-rounded {
-    border-radius: 5px;
-   }
-   
-   .btn-lg {
-    font-size: 1rem;
-    padding: 0.8rem 1.3rem;
-    text-transform: uppercase;
-   }
-   
-   .btn-xl {
-    font-size: 2rem;
-    padding: 1.5rem 2rem;
-    text-transform: uppercase;
-   }
+.btn:hover {
+opacity: 0.9;
+}
+
+.btn-rounded {
+border-radius: 5px;
+}
+
+.btn-lg {
+font-size: 1rem;
+padding: 0.8rem 1.3rem;
+text-transform: uppercase;
+}
+
+.btn-xl {
+font-size: 2rem;
+padding: 1.5rem 2rem;
+text-transform: uppercase;
+}
 
