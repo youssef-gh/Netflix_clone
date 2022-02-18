@@ -186,6 +186,13 @@ text-align: left;
 background: #222;
 }
    
+/* Hide all tab content initially */
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+ display: none;
+}
 
 
 /* Container */
